@@ -1,5 +1,6 @@
 import logo from "./assets/icon.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Nav() {
   return (
@@ -44,13 +45,11 @@ export default function Nav() {
         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
-              <a
-                href="https://www.github.com/achyuthjoism/"
-                target={"_blank"}
-                className="text-lg block p-3 text-white rounded-3xl bg-lightBlue"
-              >
-                Contact Me 👋🏻
-              </a>
+              <Link href="https://www.github.com/achyuthjoism/">
+                <a className="text-lg block p-3 text-white rounded-3xl bg-lightBlue">
+                  Contact Me 👋🏻
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
