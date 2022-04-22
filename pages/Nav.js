@@ -6,9 +6,11 @@ export default function Nav() {
   return (
     <nav className="bg-white border-gray-200 px-16 py-12">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="/" className="flex items-center">
-          <Image src={logo} width="50" height={"50"} />
-        </a>
+        <Link href={"/"}>
+          <a className="flex items-center">
+            <Image src={logo} width="50" height={"50"} />
+          </a>
+        </Link>
         <button
           data-collapse-toggle="mobile-menu"
           type="button"
